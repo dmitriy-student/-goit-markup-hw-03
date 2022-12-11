@@ -1,43 +1,70 @@
 :root {
   --accent-blue: #2196f3;
+  --accent-btn-blue: #188ce8;
   --black: #000;
   --white: #fff;
   --white-transparent: rgba(255, 255, 255, 0.6);
   --color-footer: #2f303a;
   --color-title: #212121;
   --color-desc: #757575;
+  --color-header-adress: #757575;
   --bg-color-main: #2f303a;
   --bg-color-secondary: #f5f4fa;
 }
 
-/* Body */
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.2;
-  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .link {
   text-decoration: none;
   color: inherit;
+  font-style: normal;
 }
 
 /* Header */
-
-.list {
-  list-style: none;
-}
 
 .navigation {
   letter-spacing: 0.02em;
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -51,6 +78,10 @@ body {
 
 .navigation-link {
   color: var(--color-title);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .navigation-link:hover,
@@ -58,8 +89,25 @@ body {
   color: var(--accent-blue);
 }
 
+.header-link-address {
+  color: var(--color-header-adress);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-link-address:hover,
+.header-link-address:focus {
+  color: var(--accent-blue);
+}
+
 .current-page {
   color: var(--accent-blue);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* Main */
@@ -67,25 +115,38 @@ body {
 .hero-section {
   background-color: var(--bg-color-main);
   color: var(--white);
+  padding: 200px 0;
 }
 
-.hero-section > h1 {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 100%;
+  max-width: 696px;
+  margin: 0 auto 30px;
 }
 
 .main-button {
   background-color: var(--accent-blue);
   color: var(--white);
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--accent-btn-blue);
 }
 
 .title {
@@ -93,9 +154,11 @@ body {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .subtitle {
+  margin-bottom: 10px;
   color: var(--color-title);
 }
 
@@ -103,6 +166,20 @@ body {
   color: var(--color-desc);
   font-size: 14px;
   line-height: 1.7;
+}
+
+.talant-section {
+  padding: 94px 0;
+}
+
+.talant-list {
+  width: 100%;
+  max-width: 270px;
+  display: inline-block;
+}
+
+.talant-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 .talant-section .subtitle {
@@ -113,19 +190,46 @@ body {
   text-transform: uppercase;
 }
 
+.work-section {
+  padding-bottom: 94px;
+}
+
+.work-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-list {
+  display: inline-block;
+}
+
 .team-section {
   background-color: var(--bg-color-secondary);
+  padding: 94px 0;
+}
+
+.team-list {
+  display: inline-block;
+}
+
+.team-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-section .subtitle {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
   text-align: center;
 }
 
 .team-section .desc {
   text-align: center;
+}
+
+.team-person {
+  background-color: var(--white);
+  width: 270px;
+  margin-top: -4px;
+  padding: 30px 0;
 }
 
 .visually-hidden {
@@ -145,10 +249,11 @@ body {
 
 .footer {
   background-color: var(--bg-color-main);
+  padding: 60px 0;
 }
 
 .footer-logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -162,6 +267,9 @@ body {
 
 .footer-link {
   color: var(--white);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer-link:hover,
@@ -171,6 +279,9 @@ body {
 
 .footer-link-address {
   color: var(--white-transparent);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer-link-address:hover,
@@ -181,13 +292,17 @@ body {
 /* Portfolio Main */
 
 .portfolio-section {
+  padding: 94px 0;
 }
 
 .portfolio-button {
   background-color: var(--bg-color-secondary);
   color: var(--color-title);
+  font-family: inherit;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   text-align: center;
   cursor: pointer;
 }
