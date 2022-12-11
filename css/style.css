@@ -173,12 +173,15 @@ img {
 }
 
 .talant-list {
-  width: 100%;
-  max-width: 270px;
-  display: inline-block;
+  display: flex;
 }
 
-.talant-list:not(:last-child) {
+.talant-item {
+  width: 100%;
+  max-width: 270px;
+}
+
+.talant-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -194,12 +197,12 @@ img {
   padding-bottom: 94px;
 }
 
-.work-list:not(:last-child) {
+.work-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .work-list {
-  display: inline-block;
+  display: flex;
 }
 
 .team-section {
@@ -208,10 +211,10 @@ img {
 }
 
 .team-list {
-  display: inline-block;
+  display: flex;
 }
 
-.team-list:not(:last-child) {
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -295,6 +298,14 @@ img {
   padding: 94px 0;
 }
 
+.portfolio-list-btn {
+  display: flex;
+}
+
+.portfolio-list-btn > li:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-button {
   background-color: var(--bg-color-secondary);
   color: var(--color-title);
@@ -305,12 +316,17 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-bottom: 50px;
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--accent-blue);
   color: var(--white);
+  padding: 6px 25px;
 }
 
 .portfolio-section .subtitle {
@@ -323,4 +339,13 @@ img {
 .portfolio-section .desc {
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.portfolio-list {
+  display: flex;
+}
+
+.portfolio-list-item {
+  width: 100%;
+  max-width: 370px;
 }
