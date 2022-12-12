@@ -13,38 +13,44 @@
       rel="stylesheet"
     />
     <!-- styles -->
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a href="./index.html" class="link logo">Web<span>Studio</span></a>
-          <ul class="list">
-            <li>
-              <a class="link navigation-link" href="./index.html">Студія</a>
-            </li>
-            <li>
-              <a class="link current-page" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li><a class="link navigation-link" href="">Контакти</a></li>
-          </ul>
-          <ul class="list">
-            <li>
-              <a
-                class="link header-link-address"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="link header-link-address" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="header-container">
+          <nav class="navigation">
+            <a href="./index.html" class="link logo">Web<span>Studio</span></a>
+            <ul class="list header-navigation-link">
+              <li>
+                <a class="link navigation-link" href="./index.html">Студія</a>
+              </li>
+              <li>
+                <a class="link current-page" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li><a class="link navigation-link" href="">Контакти</a></li>
+            </ul>
+            <ul class="header-address list">
+              <li class="header-link-address">
+                <a class="link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="header-link-address">
+                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -75,8 +81,10 @@
                   alt="Приклад проекту технокряк"
                   width="370"
                 />
-                <h2 class="subtitle">Технокряк</h2>
-                <p class="desc">Веб-сайт</p>
+                <div class="portfolio-list-desc">
+                  <h2 class="subtitle">Технокряк</h2>
+                  <p class="desc">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-list-item">
@@ -86,8 +94,10 @@
                   alt="Приклад проекту постер New Orlean vs Golden Star"
                   width="370"
                 />
-                <h2 class="subtitle">Постер New Orlean vs Golden Star</h2>
-                <p class="desc">Дизайн</p>
+                <div class="portfolio-list-desc">
+                  <h2 class="subtitle">Постер New Orlean vs Golden Star</h2>
+                  <p class="desc">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-list-item">
@@ -97,8 +107,10 @@
                   alt="Приклад проекту Ресторан Seafood"
                   width="370"
                 />
-                <h2 class="subtitle">Ресторан Seafood</h2>
-                <p class="desc">Додаток</p>
+                <div class="portfolio-list-desc">
+                  <h2 class="subtitle">Ресторан Seafood</h2>
+                  <p class="desc">Додаток</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-list-item">
@@ -108,8 +120,10 @@
                   alt="Приклад проекту Prime"
                   width="370"
                 />
-                <h2 class="subtitle">Проєкт Prime</h2>
-                <p class="desc">Маркетинг</p>
+                <div class="portfolio-list-desc">
+                  <h2 class="subtitle">Проєкт Prime</h2>
+                  <p class="desc">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-list-item">
@@ -119,8 +133,10 @@
                   alt="Приклад проекту Boxes"
                   width="370"
                 />
-                <h2 class="subtitle">Проєкт Boxes</h2>
-                <p class="desc">Додаток</p>
+                <div class="portfolio-list-desc">
+                  <h2 class="subtitle">Проєкт Boxes</h2>
+                  <p class="desc">Додаток</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-list-item">
@@ -130,8 +146,10 @@
                   alt="Приклад проекту Inspiration has no Borders"
                   width="370"
                 />
-                <h2 class="subtitle">Inspiration has no Borders</h2>
-                <p class="desc">Веб-сайт</p>
+                <div class="portfolio-list-desc">
+                  <h2 class="subtitle">Inspiration has no Borders</h2>
+                  <p class="desc">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-list-item">
@@ -141,8 +159,10 @@
                   alt="Приклад проекту Видання Limited Edition"
                   width="370"
                 />
-                <h2 class="subtitle">Видання Limited Edition</h2>
-                <p class="desc">Дизайн</p>
+                <div class="portfolio-list-desc">
+                  <h2 class="subtitle">Видання Limited Edition</h2>
+                  <p class="desc">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-list-item">
@@ -152,8 +172,10 @@
                   alt="Приклад проекту LAB"
                   width="370"
                 />
-                <h2 class="subtitle">Проєкт LAB</h2>
-                <p class="desc">Маркетинг</p>
+                <div class="portfolio-list-desc">
+                  <h2 class="subtitle">Проєкт LAB</h2>
+                  <p class="desc">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-list-item">
@@ -163,8 +185,10 @@
                   alt="Приклад проекту Growing Business"
                   width="370"
                 />
-                <h2 class="subtitle">Growing Business</h2>
-                <p class="desc">Додаток</p>
+                <div class="portfolio-list-desc">
+                  <h2 class="subtitle">Growing Business</h2>
+                  <p class="desc">Додаток</p>
+                </div>
               </a>
             </li>
           </ul>

@@ -13,15 +13,21 @@
       rel="stylesheet"
     />
     <!-- styles -->
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header class="header">
+      <div class="container header-container">
         <nav class="navigation">
           <a href="./index.html" class="link logo">Web<span>Studio</span></a>
-          <ul class="list">
+          <ul class="list header-navigation-link">
             <li>
               <a class="link current-page" href="./index.html">Студія</a>
             </li>
@@ -32,18 +38,14 @@
             </li>
             <li><a class="link navigation-link" href="">Контакти</a></li>
           </ul>
-          <ul class="list">
-            <li>
-              <a
-                class="link header-link-address"
-                href="mailto:info@devstudio.com"
+          <ul class="header-address list">
+            <li class="header-link-address">
+              <a class="link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a class="link header-link-address" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
+            <li class="header-link-address">
+              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </nav>
